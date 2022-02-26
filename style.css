@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
     /* border: 3px solid orange;  creates padding around scroll thumb */
   }
 
-  h1::selection, h2::selection, h3::selection, h1::selection, a::selection, span::selection , p::selection, img::selection, input::selection {
+  h1::selection, h2::selection, h3::selection, h1::selection, a::selection, span::selection , p::selection, img::selection, input::selection, textarea::selection, button::selection  {
     background: #443030;
     color: #ffffff;
 }
@@ -81,6 +81,19 @@ body::-webkit-scrollbar {
     display: block;
     transform:rotate(90deg) ;
 
+}
+
+
+@media (max-width:999px) {
+
+    .titulo-da-section{
+        font-size: 35px;
+    }
+}
+@media (max-width:768px) {
+    .titulo-da-section{
+        font-size: 30px;
+    }
 }
 
 /* ----------------------------------------------------------- */
@@ -236,9 +249,6 @@ body::-webkit-scrollbar {
     }
     .div2__font2__conteudo-2{
         font-size: 13px;
-    }
-    .conteudo-1 h1{
-        font-size: 26px;
     }
 }
 
@@ -641,8 +651,6 @@ body::-webkit-scrollbar {
 }
 .conteudo-4>h2{
     padding-bottom: 35px;
-    font-size: 45px;
-    font-weight: bold;
 }
 .portifolio{
     border: rgb(226, 58, 58) solid 1px;
@@ -685,10 +693,19 @@ body::-webkit-scrollbar {
 .portifolio a:hover{
     color: black;
 }
-/* .divblock-columns-conteudo4{
-    display: flex;
-} */
 
+/* -------SECÇÃO DE NÚMERO 5 ---- */
+.conteudo-5{
+    text-align: center;
+}
+
+.conteudo-5 h2.titulo-da-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #000;
+}
+
+/* -----------BOTÃO FIXO QUE REDIRECIONA O OVERFLOW-Y */
 .toTOP:hover{
     color: #000;
     background-color: white;
@@ -713,3 +730,4 @@ body::-webkit-scrollbar {
     width: 20px;
 
 }
+
