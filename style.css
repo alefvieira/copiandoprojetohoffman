@@ -70,17 +70,16 @@ body::-webkit-scrollbar {
     margin-top: 25px;
 
 }
-.lineTextVertical::after{
-    position: relative;
-    top: 60px;
-    left: 80.5%;
-    content: "";
-    max-width: 95px;
-    height: 2px;
-    background-color: currentColor;
-    display: block;
-    transform:rotate(90deg) ;
+.lineTextVertical{
+    position: absolute;
+    bottom: 0;
+    right: 100px ;
 
+    width: 120px;
+    height: 2px;
+    background-color: rgb(3, 88, 46);
+    transform: rotate(90deg);
+    
 }
 
 
@@ -102,7 +101,7 @@ body::-webkit-scrollbar {
 
 /* PRIMEIRA SECTION DE CONTEUDO */
 .conteudo-1{
-    padding: 0 10%;
+    padding: 0 5%;
     display: flex;
     padding-top: 80px;
     padding-bottom: 50px;
@@ -696,12 +695,13 @@ body::-webkit-scrollbar {
 
 /* -------SECÇÃO DE NÚMERO 5 ---- */
 .conteudo-5{
+    padding: 80px 0;
     text-align: center;
 }
 
 .conteudo-5 h2.titulo-da-section{
-    padding-top: 80px;
-    padding-bottom: 80px;
+
+    
     color: #000;
 }
 
