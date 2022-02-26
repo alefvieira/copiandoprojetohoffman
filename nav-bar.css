@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 a{
     font-weight: 500;
     color: #f23d3d;
@@ -56,13 +51,12 @@ nav{
         overflow-x: hidden;
     }
     .nav-list{
-
+        z-index: 9999999;
         position:absolute;
         top: 80px;
-        
         right:0;
-        width: 100vw; /*vw serve para setar o width*/
-        height:calc( 100vh - 80px); /*vh serve para setar height*/
+        width: 100%; /*vw serve para setar o width*/
+        height: 100vh; /*vh serve para setar height*/
         /* background-color: #23232e; */
         background-color: black;
         flex-direction: column;

@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>testando</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav-bar.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="nav-bar.css">
+        <link rel="stylesheet" href="style.css">
+    
 
 </head>
 
@@ -41,7 +42,7 @@
     <section class="conteudo-1">
         <div class="container">
             <span>BEM VINDO A COUTINHO</span>
-            <h1>Nós somos um grupo
+            <h1 class="titulo-da-section">Nós somos um grupo
                 criativo de pessoas com o
                 objetivo de influenciar
                 com experiências digitais
@@ -57,7 +58,7 @@
             </div>
 
 
-            <p><span><img src="images/right-arrow.png" alt="seta para baixo"></span> sobre nós</p></div>
+            <a href="#" class="lineTextVertical"><span><img src="images/right-arrow.png" alt="seta para baixo"></span> sobre nós</a>
         </div>
 
 
@@ -65,9 +66,9 @@
 
     <section class="conteudo-2">
         <div class="div1-conteudo2">
-            <span>Seja bem-vindo</span>
-            <h2> Um pouco de Coutinho</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quae iure expedita modi ratione
+            <P class="first--paragrafo">Seja bem-vindo</P>
+            <h2 class="titulo-da-section lineText"> Um pouco de Coutinho</h2>
+            <p class="txt-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quae iure expedita modi ratione
                 accusamus recusandae dolorem accusantium blanditiis aliquam. Explicabo ipsa facilis harum obcaecati
                 earum excepturi, ab perferendis culpa.</p>
         </div>
@@ -93,11 +94,11 @@
         </div>
     </section>
 
-    <section class="conteudo-3">
+    <section class="conteudo-3 " >
         <p class="first--paragrafo">
             O que fazemos
         </p>
-        <h2>
+        <h2 class="titulo-da-section lineText">
             Temos tudo o que você precisa para você expandir seus negócios
         </h2>
 
@@ -168,25 +169,164 @@
             
         </div>
     </section>
+
+
     <section class="conteudo-4">
         <p class="first--paragrafo">últimas experiências</p>
-        <p>Amamos o que fazemos, confira nossas últimas artes e experiências</p>
-        <div>
+        <h2 class="titulo-da-section lineText">Amamos o que fazemos, confira nossas últimas artes e experiências</h2>
+
+        <div class="divblock-columns-conteudo4">
+            <div class="portifolio"><a href="#" alt="Redirect to Fist">
+                    <!-- <div class="link"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link"
+                            class="svg-inline--fa fa-link fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                            </path>
+                        </svg></div>
+                    <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                            class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                        </svg></div>
+                    <div class="titulo">
+                        <h4>Shutterbug</h4>
+                        <p>Branding</p>
+                    </div> -->
+                    
+                    <img class="img-fluid" src="images/img-Section-4/img1.jpg" alt="Fist Work">
+                </a></div>
+            
+            <div class="portifolio"><a href="#" alt="Redirect to Thirty">
+                    <!-- <div class="link"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link"
+                            class="svg-inline--fa fa-link fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                            </path>
+                        </svg></div>
+                    <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                            class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                        </svg></div>
+                    <div class="titulo">
+                        <h4>THE BEETLE</h4>
+                        <p>Web Development</p>
+                    </div> -->
+                    <img class="img-fluid" src="images/img-Section-4/img2.jpg" alt="Thirty Work">
+                </a></div>
+            
+            <div class="portifolio"><a href="#" alt="Redirect to Five">
+                    <!-- <div class="link"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link"
+                            class="svg-inline--fa fa-link fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                            </path>
+                        </svg></div>
+                    <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                            class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                        </svg></div>
+                    <div class="titulo">
+                        <h4>GUITARIST</h4>
+                        <p>Web Design</p>
+                    </div> -->
+                    <img class="img-fluid" src="images/img-Section-4/img3.jpg" alt="Five Work">
+                </a></div>
+            
+            <div class="portifolio"><a href="#" alt="Redirect to Second">
+                    <!-- <div class="link"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link"
+                            class="svg-inline--fa fa-link fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                            </path>
+                        </svg></div>
+                    <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                            class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                        </svg></div>
+                    <div class="titulo">
+                        <h4>WOODCRAFT</h4>
+                        <p>Web Design</p>
+                    </div> -->
+                    <img class="img-fluid" src="images/img-Section-4/img4.jpg" alt="Second Work">
+                </a></div>
+            
+            <div class="portifolio">
+                <a href="#" alt="Redirect to Four">
+                    <!-- <div class="link"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link"
+                            class="svg-inline--fa fa-link fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                            </path>
+                        </svg></div>
+                    <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                            class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                        </svg></div>
+                    <div class="titulo">
+                        <h4>GROW GREEN</h4>
+                        <p>Branding</p>
+                    </div> -->
+                    <img class="img-fluid" src="images/img-Section-4/img5.jpg" alt="Four Work">
+                </a>
+            </div>
+            
+            <div class="portifolio">
+                <a href="#" alt="Redirect to Six">
+                    <!-- <div class="link"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link"
+                            class="svg-inline--fa fa-link fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                            </path>
+                        </svg></div>
+                    <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus"
+                            class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                            </path>
+                        </svg></div>
+                    <div class="titulo">
+                        <h4>PALMEIRA</h4>
+                        <p>Web Design</p>
+                    </div> -->
+                    <img class="img-fluid" src="images/img-Section-4/img6.jpg" alt="Six Work">
+                </a>
+            </div>
 
         </div>
     </section>
 
     <section class="conteudo-5">
         <p class="first--paragrafo">Nossos parceiros</p>
-        <p>Nós da hoffman temos uma cartela seleta de clientes</p>
+        <h2 class="titulo-da-section">Nós da hoffman temos uma cartela seleta de clientes</h2>
         <!-- carrossel 1 -->
         <!-- carrossel 2 -->
 
     </section>
 
     <section class="conteudo-6">
-        <p class="first--paragrafo">Entre em contato</p>
-        <h2>Faça o orçamento do seu negócio mesmo sem compromisso</h2>
+        <p class="first--paragrafo lineTextVertical">Entre em contato</p>
+        <h2 class="titulo-da-section">Faça o orçamento do seu negócio mesmo sem compromisso</h2>
         <!-- informações  -->
         <div class="divblock--conteudo6">
             <div class="div1--conteudo6">
@@ -221,7 +361,7 @@
         <footer>
             <div class="divblock--conteudo7">
                 <div class="div1--conteudo7">
-                    <h2>Álef</h2>
+                    <h2 >Álef</h2>
                     <p>
                         Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent
                         sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget
@@ -239,8 +379,8 @@
                     </p>
                     <div>
                         <div>
-                            <div class="conteudo7--campoinscreva"><label for="btn--subscribe"><span>@</span></label> <input id="btn--subscribe" type="text" placeholder="Inscreva-se"></div>
-                            <input class="formatacao--btn" type="button" value="Subscribe">
+                            <div class="conteudo7--campoinscreva"><label for="btn--subscribe"><span>@</span> </label> <input id="btn--subscribe" type="text" placeholder="Inscreva-se"></div>
+                            <div class="conteudo7--campoinscreva"><input class="formatacao--btn" type="button" value="Subscribe"></div>
                         </div>
                     </div>
                 </div>
@@ -253,9 +393,9 @@
         </footer>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <a alt="Ir para o topo" title="Ir para o Topo da página" class="toTOP active"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></a>
+
+    
     <script src="mobileNavBar.js"></script>
 </body>
 
