@@ -57,6 +57,7 @@ body::-webkit-scrollbar {
     font-size: 16px;
     color: #f23d3d;
     letter-spacing: 0.25rem;
+    padding-bottom: 10px;
 }
 
 /* linha abaixo no texto */
@@ -697,11 +698,13 @@ body::-webkit-scrollbar {
 .conteudo-5{
     padding: 80px 0;
     text-align: center;
+    
+}
+.carousel{
+    margin: 30px 0;
 }
 
 .conteudo-5 h2.titulo-da-section{
-
-    
     color: #000;
 }
 
