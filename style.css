@@ -607,6 +607,7 @@ body::-webkit-scrollbar {
     font-size: 17px;
 }
 .div2--conteudo3>h3{
+    margin: 0 auto 20px;
     color: #000;
     font-size: 26px;
     font-weight: bold;
