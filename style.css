@@ -43,7 +43,16 @@ body::-webkit-scrollbar {
 }
 
 
+
 /* CLASSES APLICADAS QUE PODEM SER APLICADAS EM TODAS AS SECTIONS */
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+a:focus{
+    color: white;
+    text-decoration: none;
+}
 
 .titulo-da-section{
     color: white;
@@ -149,6 +158,7 @@ body::-webkit-scrollbar {
 }
 
 .conteudo-1 a{
+    text-decoration:none ;
     display: block;
     font-size: 12px;
     text-transform: uppercase;
@@ -643,7 +653,7 @@ body::-webkit-scrollbar {
     }
 }
 
-/* SECTION 4 */
+/* SECTION DE NÚMERO 4 */
 
 .conteudo-4{
     background-color: #000;
@@ -653,46 +663,106 @@ body::-webkit-scrollbar {
 .conteudo-4>h2{
     padding-bottom: 35px;
 }
-.portifolio{
-    border: rgb(226, 58, 58) solid 1px;
-    margin: 0;
-}
-.portifolio{
-    z-index: 1;
-    vertical-align: top;
+
+.colums--imgs{
     display: inline-block;
+    margin-right: -5px;
+    vertical-align: top;
     width: 50%;
-    margin-right: -4px;
-    min-height: 100%;
-    margin-bottom: -5px;
+    
 }
-.portifolio:nth-of-type(3){
+.portifolio{
+    
+    max-width: 100%;
+    height: fit-content;
+    overflow: hidden;
     position: relative;
-    top: -110px;
 }
-.portifolio:nth-of-type(5){
-    position: relative;
-    top: -108px;
-}
+
 
 .img-fluid{
     max-width: 100%;
+    position: relative;
+    transition: all .5s;
+}
+.img-fluid:hover{
+    filter:brightness(40%);
+    -webkit-filter: brightness(40%);
+    transform: scale(1.1);
 
 }
-.portifolio .link{
-    width: 1.5rem;
+
+.portifolio .link svg, .portifolio .icon svg{
+    width: 1.4rem;
+    color: white;
 
 }
-.portifolio .icon{
-    width: 1.5rem;
+
+
+.portifolio:hover .link,.portifolio:hover .icon, .portifolio:hover .titulo{
+    z-index: 1;
+    color: white;
+    filter:brightness(100%);
 }
 
 
-.portifolio a{
-    color: black;
+
+.link{
+   
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    height: 60px;
+    left: 7%;
+    position: absolute;
+    top: 7%;
+    width: 60px;
+    align-content: center;
+    justify-content: center;
 }
-.portifolio a:hover{
-    color: black;
+.link:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: absolute;
+    top: -83%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 100px;
+}
+
+.icon, .titulo {
+    position: absolute;
+}
+.icon {
+    left: 45%;
+    top: 45%;
+}
+.conteudo-4 .titulo {
+    bottom: 7%;
+    left: 7%;
+}
+.conteudo-4  .icon,.conteudo-4  .titulo {
+    position: absolute;
+}
+
+.portifolio a {
+    color: #fff;
+    display: flex;
+}
+.portifolio a {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+
+@media (max-width: 768px ) {
+    .conteudo-4{
+        padding: 30px 2%;
+    }
 }
 
 /* -------SECÇÃO DE NÚMERO 5 ---- */
