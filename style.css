@@ -58,9 +58,11 @@ a:focus{
     color: white;
     font-size: 44px;
     font-weight: bold;
+    text-align: center;
 }
 
 .first--paragrafo{
+    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
@@ -91,15 +93,26 @@ a:focus{
     transform: rotate(90deg);
     
 }
-
+.container{
+    width: 80%;
+    padding: 0;
+    /* border: green solid 3px; */
+}
 
 @media (max-width:999px) {
+    .container{
+        width: 90%;
 
+    }
     .titulo-da-section{
         font-size: 35px;
     }
 }
 @media (max-width:768px) {
+    .container{
+        width: 96%;
+
+    }
     .titulo-da-section{
         font-size: 30px;
     }
@@ -111,12 +124,10 @@ a:focus{
 
 /* PRIMEIRA SECTION DE CONTEUDO */
 .conteudo-1{
-    padding: 0 5%;
     display: flex;
     padding-top: 80px;
     padding-bottom: 50px;
     min-height:100vh;
-    height: auto;
     background-color: black;
     text-align: center;
     align-content: flex-start;
@@ -176,15 +187,13 @@ a:focus{
     color: white;
     margin: 20px;
 }
-.conteudo-1 .container{
-    width: 90%;
-}
+
 
 /* -----------------SECÇÃO  NÚMERO  2 */
 .conteudo-2 {
+    
     display: flex;
     min-height: 100vh;
-    padding: 0 5%;
     background-color: #f23d3d;
     flex-direction: column;
     align-content: space-around;
@@ -252,7 +261,7 @@ a:focus{
 }
 @media (max-width:668px) {
     .conteudo-2{
-        padding: 70px 2%;
+        padding: 70px auto;
     }
     .div2__font1__conteudo-2{
         font-size: 24px;
@@ -265,7 +274,7 @@ a:focus{
 /* CONTEUDO 7 -- FOOTER DA PAGINA */
 .conteudo-7{
 
-    padding: 5% 10%;
+    padding: 5% auto;
     background-color: #111;
     color: rgba(255, 255, 255, 0.5);
     
@@ -385,7 +394,7 @@ a:focus{
         justify-content: center;
     }
     .conteudo-7{
-        padding: 25px 3%;
+        padding: 25px auto;
     }
     .divblock--conteudo7{
         padding: 30px 0;
@@ -419,7 +428,7 @@ a:focus{
         margin-top: 10px;
     }
     .conteudo-7{
-        padding: 25px 3%;
+        padding: 25px auto;
     }
 }
 
@@ -427,7 +436,6 @@ a:focus{
 /* CONTEUDO DA SECTION 6 */
 .conteudo-6{
     min-height: 100vh;
-    height: auto;
     padding: 87px 0;  
     color: white;
     background-color: rgba(0,0,0,.8);
@@ -442,7 +450,7 @@ a:focus{
 }
 .conteudo-6>p, .conteudo-6>h2{
     text-align: center;
-    
+    color: yellow;    
 }
 .conteudo-6>h2{
     padding-bottom: 25px;
@@ -465,7 +473,7 @@ a:focus{
 }
 .divblock--conteudo6{
     display: flex;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 .div1--conteudo6{
@@ -511,10 +519,7 @@ a:focus{
     width: 100%;
 }
 @media (max-width:999px) {
-    .conteudo-6>h2{
-        font-size: 27px;
-        font-weight: bold;
-    }
+
     .divblock--conteudo6{
         padding: 0;
         display: flex;
@@ -535,7 +540,9 @@ a:focus{
 
 
 @media (max-width:668px) {
-
+    .conteudo-6 >.container{
+        width: 100%;
+    }
     .conteudo-6>h2{
         font-size: 24px;
         font-weight: bold;
@@ -577,7 +584,6 @@ a:focus{
 
 /* SECTION 3 */
 .conteudo-3{
-    padding: 0 10%;
     padding-top: 100px;
     padding-bottom: 75px;
 }
@@ -617,7 +623,7 @@ a:focus{
     font-size: 17px;
 }
 .div2--conteudo3>h3{
-    margin: 0 auto 20px;
+    margin: 0 auto 20px auto;
     color: #000;
     font-size: 26px;
     font-weight: bold;
@@ -625,7 +631,6 @@ a:focus{
 
 @media (max-width: 999px){
     .conteudo-3{
-        padding: 0 5%;
         padding-top: 100px;
     }
 
@@ -658,7 +663,8 @@ a:focus{
 .conteudo-4{
     background-color: #000;
     text-align: center;
-    padding: 50px 15%;
+    padding: 80px 0;
+    /* padding: 500px 0; */
 }
 .conteudo-4>h2{
     padding-bottom: 35px;
@@ -761,7 +767,10 @@ a:focus{
 
 @media (max-width: 768px ) {
     .conteudo-4{
-        padding: 30px 2%;
+        padding: 30px 0%;
+    }
+    .conteudo-4 >.container{
+        width: 100%;
     }
 }
 
