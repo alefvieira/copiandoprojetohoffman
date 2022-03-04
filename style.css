@@ -666,8 +666,14 @@ a:focus{
     padding: 80px 0;
     /* padding: 500px 0; */
 }
+.divblock-columns-conteudo4{
+    margin-top: 30px;
+}
 .conteudo-4>h2{
+
     padding-bottom: 35px;
+
+
 }
 
 .colums--imgs{
