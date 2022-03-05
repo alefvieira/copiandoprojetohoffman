@@ -1,12 +1,12 @@
 a{
     font-weight: 500;
-    color: #f23d3d;
+    /* color: #f23d3d; */
+    color: white;
     text-decoration: none;
 }
 a:hover{
-    
-    /* opacity: 0.7; */
     color: white;
+    text-shadow: 0.2em 0.1em 0.2em #f23d3d;
 }
 .logo{
     font-size: 24px;

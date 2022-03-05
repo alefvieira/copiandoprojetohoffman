@@ -6,10 +6,12 @@
         document.addEventListener("scroll", function() {
             if(scrollY > 0){
                 visible_Arrow.style.display = "block"
+                document.querySelector(".barra-menu").style.background = "#00000099"
 
                
             }
             else{
+
                 visible_Arrow.style.display = "none"
             }
 

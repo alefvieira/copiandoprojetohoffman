@@ -84,25 +84,6 @@ a:focus{
 }
 
 
-.center {
-    left: 49%;
-}
-.top {
-    top: 0;
-}
-.light {
-    background-color: #fff;
-}
-.content-Line {
-    z-index: 999;
-    background-color: green;
-    bottom: 0;
-    height: 5rem;
-    position: absolute;
-    right: 7.2rem;
-    width: 2px;
-}
-
 
 
 .container{
@@ -452,14 +433,7 @@ a:focus{
     color: white;
     background-color: rgba(0,0,0,.8);
 }
-.conteudo-6  .lineTextVertical::after{
-    position: relative;
-    top: -100px ;
-    left: 45%;
 
-
-
-}
 .conteudo-6>p, .conteudo-6>h2{
     text-align: center;
     color: yellow;    
@@ -682,7 +656,7 @@ a:focus{
     margin-top: 30px;
 }
 .conteudo-4>h2{
-
+    padding: 30px;
     padding-bottom: 35px;
 
 
@@ -790,6 +764,12 @@ a:focus{
     }
     .conteudo-4 >.container{
         width: 100%;
+    }
+    .conteudo-4 h2.titulo-da-section{
+        margin: auto 3%;
+        padding-bottom: 35px;
+    
+    
     }
 }
 
