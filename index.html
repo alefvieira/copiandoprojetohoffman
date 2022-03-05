@@ -8,23 +8,15 @@
     <title>Dev Coutin</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link   rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="nav-bar.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleCarrossel.css">
 
+    
 
 </head>
 
@@ -43,17 +35,17 @@
 
                 <ul class="nav-list">
 
-                    <li><a href="/">Sobre Nós</a></li>
-                    <li><a href="/">Serviços</a></li>
-                    <li><a href="/">Últimas Experiências</a></li>
-                    <li><a href="/">Nossos Parceiros</a></li>
-                    <li><a href="/">Entre em Contato</a></li>
+                    <li><a class= "evtClick" href="#conteudo-2">Sobre Nós</a></li>
+                    <li><a class= "evtClick" href="#conteudo-3">Serviços</a></li>
+                    <li><a class= "evtClick" href="#conteudo-4">Últimas Experiências</a></li>
+                    <li><a class= "evtClick" href="#conteudo-5">Nossos Parceiros</a></li>
+                    <li><a class= "evtClick" href="#conteudo-6">Entre em Contato</a></li>
                 </ul>
             </nav>
         </header>
     </section>
 
-    <section class="conteudo-1">
+    <section class="conteudo-1" id="conteudo-1">
         <div class="container">
             <span>BEM VINDO A COUTINHO</span>
             <h1 class="titulo-da-section">Nós somos um grupo
@@ -72,13 +64,13 @@
             </div>
 
 
-            <a href="#"><span><img src="images/right-arrow.png" alt="seta para baixo"></span> sobre nós</a>
+            <a href="#conteudo-2" class="sobre-nos"><span><img src="images/right-arrow.png" alt="seta para baixo"></span> sobre nós</a>
         </div>
 
 
     </section>
 
-    <section class="conteudo-2">
+    <section class="conteudo-2" id="conteudo-2">
         <div class="container">
             <div class="div1-conteudo2">
                 <P class="first--paragrafo">Seja bem-vindo</P>
@@ -112,7 +104,7 @@
 
     </section>
 
-    <section class="conteudo-3 ">
+    <section class="conteudo-3 " id="conteudo-3">
         <div class="container">
             <p class="first--paragrafo">
                 O que fazemos
@@ -254,7 +246,7 @@
     </section>
 
 
-    <section class="conteudo-4">
+    <section class="conteudo-4" id="conteudo-4">
         <div class="container">
             <p class="first--paragrafo">últimas experiências</p>
             <h2 class="titulo-da-section lineText">Amamos o que fazemos, confira nossas últimas artes e experiências
@@ -426,7 +418,7 @@
 
     </section>
 
-    <section class="conteudo-5">
+    <section class="conteudo-5" id="conteudo-5">
         <div class="container">
             <p class="first--paragrafo">Nossos parceiros</p>
             <h2 class="titulo-da-section">Nós da Coutin Dev temos uma cartela seleta de clientes</h2>
@@ -556,8 +548,11 @@
 
 
     <!-- INICIO DA SECTION 6 -->
-    <section class="conteudo-6">
+    <section class="conteudo-6" id="conteudo-6">
+       
+
         <div class="container">
+            <div class="content-Line top center light"></div>
             <p class="first--paragrafo ">Entre em contato</p>
             <h2 class="titulo-da-section">Faça o orçamento do seu negócio mesmo sem compromisso</h2>
             <!-- informações  -->
@@ -589,10 +584,11 @@
             </div>
         </div>
 
+        
 
     </section>
 
-    <section class="conteudo-7">
+    <section class="conteudo-7" id="conteudo-7">
         <footer class="container">
             <div class="divblock--conteudo7">
                 <div class="div1--conteudo7">
@@ -643,8 +639,9 @@
     <script src="mobileNavBar.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script-carrossel.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="scripts.js"></script>
-  
 
 </body>
 

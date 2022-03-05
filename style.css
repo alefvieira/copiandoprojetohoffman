@@ -82,17 +82,29 @@ a:focus{
     margin-top: 25px;
 
 }
-.lineTextVertical{
-    position: absolute;
-    bottom: 0;
-    right: 100px ;
 
-    width: 120px;
-    height: 2px;
-    background-color: rgb(3, 88, 46);
-    transform: rotate(90deg);
-    
+
+.center {
+    left: 49%;
 }
+.top {
+    top: 0;
+}
+.light {
+    background-color: #fff;
+}
+.content-Line {
+    z-index: 999;
+    background-color: green;
+    bottom: 0;
+    height: 5rem;
+    position: absolute;
+    right: 7.2rem;
+    width: 2px;
+}
+
+
+
 .container{
     width: 70%;
     padding: 0;
@@ -812,7 +824,7 @@ a:focus{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    display: block;
+    display: none;
     border: #fff solid 2px;
     color: white;
     padding-left: 13px;
