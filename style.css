@@ -689,20 +689,16 @@ a:focus{
     height: fit-content;
     overflow: hidden;
     position: relative;
-}
 
+}
 
 .img-fluid{
     max-width: 100%;
     position: relative;
     transition: all .5s;
+    
 }
-.img-fluid:hover{
-    filter:brightness(40%);
-    -webkit-filter: brightness(40%);
-    transform: scale(1.1);
 
-}
 
 .portifolio .link svg, .portifolio .icon svg{
     width: 1.4rem;
@@ -710,6 +706,11 @@ a:focus{
 
 }
 
+.portifolio:hover .img-fluid{
+    filter:brightness(40%);
+    -webkit-filter: brightness(40%);
+    transform: scale(1.1);
+}
 
 .portifolio:hover .link,.portifolio:hover .icon, .portifolio:hover .titulo{
     z-index: 1;
@@ -786,8 +787,10 @@ a:focus{
     text-align: center;
     
 }
-.carousel{
-    margin: 30px 0;
+
+.conteudo-5 .lineText::after{
+    background-color: #91909099;
+    
 }
 
 .conteudo-5 h2.titulo-da-section{

@@ -1,30 +1,22 @@
-document.querySelector(".carousel").addEventListener("wheel", event =>{
-    if(event.deltaY > 0){
-        event.target.scrollBy(-150,0)
-        console.log(event)
-    }else{
-        event.target.scrollBy(150,0)
-        console.log(event)
-    }
-})
-document.querySelector(".carousel").addEventListener("mouseover", event =>{
-    console.log("deu certo")
-    const bodyEdit = document.querySelector("body")
-    bodyEdit.style.overflowY = "hidden"
-})
-document.querySelector(".carousel").addEventListener("mouseout", event =>{
-    console.log("deu certo")
-    const bodyEdit = document.querySelector("body")
-    bodyEdit.style.overflowY = "visible"
-})
+var swiper1 = new Swiper(".mySwiper1", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    // navigation: {
+    // nextEl: ".swiper-button-next",
+    // prevEl: ".swiper-button-prev",
+    // },
+});
 
-
-
-$(function(){
-    $(".item").hover(function(){
-
-       const bodyEdit = document.querySelector(".conteudo-5")
-
-       console.log("deu certo")
-    });
- });
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+});
