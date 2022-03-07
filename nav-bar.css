@@ -4,7 +4,7 @@ a{
     color: white;
     text-decoration: none;
 }
-a:hover{
+a.evtClick:hover{
     color: white;
     text-shadow: 0.2em 0.1em 0.2em #f23d3d;
 }

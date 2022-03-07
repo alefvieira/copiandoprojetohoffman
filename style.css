@@ -126,6 +126,7 @@ a:focus{
     align-content: flex-start;
     flex-direction: column;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .conteudo-1 p {
@@ -160,10 +161,11 @@ a:focus{
     height: 13px;
     width: 13px;
 }
-
-.conteudo-1 a{
+.sobre-nos{
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
     text-decoration:none ;
-    display: block;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -180,11 +182,19 @@ a:focus{
     color: white;
     margin: 20px;
 }
+.conteudo-1 .vertical{
+    position: absolute;
+    width: 3px;
+    height: 9%;
+    background-color: #f23d3d ;
+    bottom: 0;
+    right: 5%;
+}
 
 
 /* -----------------SECÇÃO  NÚMERO  2 */
 .conteudo-2 {
-    
+    position: relative;
     display: flex;
     min-height: 100vh;
     background-color: #f23d3d;
@@ -193,6 +203,16 @@ a:focus{
     justify-content: center;
 
 }
+.conteudo-2 .vertical{
+    background-color: white;
+    position: absolute;
+    width: 3px;
+    height: 9%;
+    top: 0;
+    right: 5%;
+}
+
+
 .div1-conteudo2{
     color: white;
     text-align: center;
@@ -428,10 +448,20 @@ a:focus{
 
 /* CONTEUDO DA SECTION 6 */
 .conteudo-6{
+    position: relative;
     min-height: 100vh;
     padding: 87px 0;  
     color: white;
     background-color: rgba(0,0,0,.8);
+}
+
+.conteudo-6 .vertical{
+    background-color: white;
+    position: absolute;
+    width: 3px;
+    height: 70px;
+    top: 0;
+    right: calc(50% - 3px);
 }
 
 .conteudo-6>p, .conteudo-6>h2{
@@ -535,7 +565,7 @@ a:focus{
     }
 
     .conteudo-6{
-        padding: 50px 0;  
+        padding: 80px 0;  
         
     }
     .divblock--conteudo6{
@@ -775,10 +805,22 @@ a:focus{
 
 /* -------SECÇÃO DE NÚMERO 5 ---- */
 .conteudo-5{
+    position: relative;
     padding: 80px 0;
     text-align: center;
     
 }
+
+.conteudo-5 .vertical{
+    position: absolute;
+    width: 3px;
+    height: 70px;
+    background-color: #f23d3d ;
+    bottom: 0;
+    right: calc(50% - 3px);
+}
+
+
 
 .conteudo-5 .lineText::after{
     background-color: #91909099;
