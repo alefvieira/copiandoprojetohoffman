@@ -286,7 +286,9 @@ a:focus{
 
 /* CONTEUDO 7 -- FOOTER DA PAGINA */
 .conteudo-7{
-
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
     padding: 5% auto;
     background-color: #111;
     color: rgba(255, 255, 255, 0.5);
@@ -464,10 +466,6 @@ a:focus{
     right: calc(50% - 3px);
 }
 
-.conteudo-6>p, .conteudo-6>h2{
-    text-align: center;
-    color: yellow;    
-}
 .conteudo-6>h2{
     padding-bottom: 25px;
     font-size: 35px;
@@ -509,6 +507,7 @@ a:focus{
 }
 .div2--conteudo6 p{
     padding: 15px;
+    font-size: 16px;
 }
 .divblock--conteudo6 h3{
     color: white;

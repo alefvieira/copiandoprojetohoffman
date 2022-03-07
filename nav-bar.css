@@ -9,12 +9,12 @@ a.evtClick:hover{
     text-shadow: 0.2em 0.1em 0.2em #f23d3d;
 }
 .logo{
+    z-index: 10;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 nav{
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -46,14 +46,16 @@ nav{
     transition: 0.3s;
 }
 
-@media (max-width:999px) {
+
+
+/* @media (max-width:999px) { */
     body{
         overflow-x: hidden;
     }
     .nav-list{
-        z-index: 9999999;
+        z-index: 9;
         position:absolute;
-        top: 80px;
+        top: 0px;
         right:0;
         width: 100%; /*vw serve para setar o width*/
         height: 100vh; /*vh serve para setar height*/
@@ -73,6 +75,7 @@ nav{
     }
 
     .mobile-menu{
+        z-index: 99;
         display: block;
     }
     .nav-list.active{
@@ -82,7 +85,7 @@ nav{
         transform: translate(0);
     }
     
-}
+/* } */
 
 @keyframes navLinkFade{
     from{
