@@ -47,8 +47,48 @@ nav{
 }
 
 
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        z-index: 9999999;
+        position:absolute;
+        top: 0px;
+        padding-top: 80px;
+        right:0;
+        /* max-width: 700px; */
+        width: 100%; /*vw serve para setar o width*/
+        height: 100vh; /*vh serve para setar height*/
+        /* background-color: #23232e; */
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-around; */
+        justify-content:center;
+        transform: translate(100%) ;
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li{
+        padding: 15px;
+        margin:0;
+        opacity: 0;
+    }
 
-/* @media (max-width:999px) { */
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active{
+        transform: translate(0);
+    }
+    .nav-list.active a.clicked{
+        transform: translate(0);
+    }
+    
+
+
+
+
+@media (max-width:999px) {
     body{
         overflow-x: hidden;
     }
@@ -85,7 +125,7 @@ nav{
         transform: translate(0);
     }
     
-/* } */
+}
 
 @keyframes navLinkFade{
     from{
